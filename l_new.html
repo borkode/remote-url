@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>New Site</title>
+        <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAACFCAMAAAC3+kC+AAAAXVBMVEX///9yidpqgtiyvelvh9n5+v2MnuCGmd9thdlmgNfv8fpkftd8kdzO1fHj5/ems+bW3PPd4vXq7fnGzu+WpuKtuei8xuz19vxdedahr+WRouG4wuudq+SAld14jtzXyzKCAAAExklEQVR4nO2b26KqKhSGEVFBxfO58v0fc6vNUgfaNMBday3+i3lRRl+DAYwDEyEjIyMjo/9VjkbJU/C4czWqi7mULWwWUEo0ilLG7LftEvXYOkG4j97jSCk9g8OyKH2LJMPkHA7LIjR7A+R2GsdgE+84Bw/O47CsIDnK4bgnGmSYHPcoSHaSoz5JjnpJcurMvDE3l1O2kFmsOghinwyCbQNiQAyIATEgBuTPAiFi+LTx0rkghLKG3UL4tTTsm4D9SqMLhGDixdx3/AQ8R68OqqOqCNnrEE8PyIBhp0O+lpUeHpI3PIqNfyilvVuNmZyfFIy+MIsOEBJ4YwJbV2HTBH3XlhVP0jSKUp5f4qIPmqaY4sDaxvuDaADBYT7+4nKYnDKphTzW8Xns4T6fzBLvGkUZhLC4HrNz7OUv4vDoYoVT2p+GO+OoghBrtHrlXerfBohaN50GYqeAjMF3ZieHCgt1Nc2Pu7l8FEGIVSMnOlzf8Mesn2+OpAhCL0cZFuq3HFYRBP/qGhvKt7xEDYS2EhzI3zKJIkgqA4LKjbGUQI7XEtaKNhJ6JZDDiTOQ44lzowQSyLjqqEocTAWEFJIcyBfXjQoIzmVBkBA+KYEwXxqkEkyiAEJCaQ4U6bQIltnef+QIRVsVEHE3izgXghKf5xsF7is8guVBSAhdJHPpEKQWq5freAhh6U1gFsrHCiAdeMK/9wzwbUHidJNXEgZJfH0g8JPOI+DBi40/Zg/zgb1PcBJ5kAD8yLkijJ8+4Tw9gcE9pwVOIg/CwG+cj9R5o5uzLQonEhaQpUFICALEgopj5nh+HIwHM0J5kCt4YLb1vMHw52vkBh6Hx400CIUfnANA/GxcRjNcDAfUZREMY5HskfATOk/ac20I6xeG0PIgQlsj/1k2bNHJTX9SzEAwCOp0gYj7dokpIZStjiCO8fhaIaY+MdUDAlfvqDT2vBgA1rbrtVvdbrB+5UEOfm5XILuRXzWqIIkeEELmt5zj2c1i3kCTUH6LX7yXFsdalFm8QNZlkSUI4n35e2ZR26sln2pyVrwyQmQ18et+aRQ3/eojtiYQGKDZOOinyuKWsjwMwDURruussai7no0oxg3z2jxbwzh1Wrqkoe3ajRJY1VMInikMWv3cpZQ1xI0vVc4H5VVZhEGAaVeBR3PhCohSyknAjnlProct/V7rHf9MJyE8IOuWac30LIKvq19a7JVA6cqR+U13fWSYHrY4W3YKlxPxDJx7wQk1tAEFh1U6fc2rmy7kNnq2E/GW7lwQ0lACJwyHbtGWm8XC5/d05bXzrP2+gKbuxHih7HVHhkz3116Q/q2tNANiQAyIATEg/yzI7rl3GESsnktxhHvBwmEQTddIabRjk8MgmZ4LvkHiiy2St0CcTgsJjZEfbrXCD4Mg3ugAIV6Nak8lit/r6b8rNkb9nUJPb/CSXgfJvTMqkrwBoudfFsj9Kn4r3Z2YbOKJqeLbINY917IByVsgyLn0Y29ISY8yrGx95IHC7c5T0u1Rh80bFRCd4suJ/iQI4ovt/qMgKJ0z8s+CLLb7D4Mg38XfAfJoyH4e5NGS/QIQdGFfAjJsbeQ7QFBqke8AGUIM9h0gyKflpxF+VEv9l6uRkZGR0Z+q/wD12knNh5aQGgAAAABJRU5ErkJggg==" />
+        <style>
+          @import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:900&display=swap');
+          body {
+            overflow-y:hidden;
+          }
+          .popup{
+            background-color:black;
+            position:absolute;
+            width:100%;
+            height:100%;
+            left:0%;
+            top:0%;
+            opacity:0.45;
+            z-index:5;
+          }
+          img {
+            position:absolute;
+            width:30vmin;
+            height:60vmin;
+            left:calc(50% - 15vmin);
+            top:calc(50% - 30vmin);
+            z-index:6;
+          }
+          .overall_popup button {
+            font-size:16px;
+            position:absolute;
+            left:calc(50% - 2ex);
+            top:calc(51% + 30vmin);
+            z-index:6;
+            cursor:hand;
+            cursor:pointer;
+          }
+          input {
+            border-radius: 2px;
+            border: 1px solid;
+            margin: 6px;
+            padding: 5px;
+            font-family: 'Open Sans', sans-serif;
+          }
+          form {
+            margin: 9px;
+            padding: 9px;
+          }
+          html {
+            font-family: 'Open Sans', sans-serif;
+          }
+          strong {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+          }
+          .smtxt {
+            font-size: 10px;
+            cursor: help;
+          }
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+          .itext {
+            width:50%;
+          }
+          .smrtxt {
+            font-size:10px;
+          }
+          .uinprogress {
+            font-size:25px;
+            visibility:hidden;
+            position:absolute;
+          }
+          table {
+            width:45%;
+          }
+          .table_right {
+            position:absolute;
+            top:inherit;
+            left:52.5%;
+            width:45%;
+            height:72.5%;
+            border: 1px solid #ccc;
+            text-align:center;
+          }
+          .table_right iframe {
+            width:95%;
+            position:absolute;
+            left:2.5%;
+            top:48px;
+            height:calc(95% - 48px);
+            border: 2px solid #aaa;
+          }
+        </style>
+    </head>
+    <script>
+      let scto = setInterval(() => {
+        window.scrollTo(0,0);
+      },1);
+    </script>
+    <body>
+        <span class="overall_popup">
+          <div class="popup">
+          </div>
+          <img src="https://cdn.glitch.com/280d17fa-9379-4cac-90e4-dfe70038d347%2Frahim.png?1558447846544" draggable="false" />
+          <button onclick="this.parentElement.style.display='none';document.body.style.overflowY='scroll';clearInterval(scto);" autofocus>
+            Ok
+          </button>
+        </span>
+        <noscript>
+          <strong style="font-size:25px;">Please enable JavaScript</strong>
+        </noscript>
+        <i>I just want to thank the technology administrators for not blocking this website</i>
+        <strong class="uinprogress">An update is in progress, please expect some bugs.</strong>
+        <form action="/loader/set_page" method="get">
+          <fieldset>
+            <legend>
+              Load new site
+            </legend>
+            <a class="smtxt" href="javascript:blank;" onclick="alert('remote-url is a proxy website that loads and displays URLs through a server. It is powered by NodeJS. You can type in or copy and paste a URL into the given field below and try it out for yourself.');">What is this? How do I use it?</a><br />
+            <input class="itext" required type="text" name="w" placeholder="This field only accepts URLs, not Google searches!" />
+            <br />
+            <input type="submit" value="Load URL" />
+          </fieldset>
+        </form>
+      <strong>Please note: This website can only load 4,000 URLS per hour. This may seem like a lot, but cross-loading in websites really adds up. Please be courteous of the limit.</strong><br /><br />
+      <table>
+        <tr>
+          <th>Most Popular URLs:</th>
+        </tr>
+        REPLACE_TABLE_POPULAR
+      <div class="table_right">
+        <h3 style="font-size:24px;margin:8px;">Global Chat</h3>
+        <iframe src="//global-chat-rurl.glitch.me">
+          This browser does not support Iframes.
+        </iframe>
+      </div>
+      </table>
+      <i>Showing REPLACE_UNSORTED_COUNT URL log(s) out of REPLACE_UNSORTED_LENGTH</i>
+      <p class="smrtxt">
+        This website has served a total of REPLACE_REQUESTS_COUNT requests.
+      </p>
+    </body>
+</html>
